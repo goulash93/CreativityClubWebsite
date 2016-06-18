@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 
@@ -18,46 +17,29 @@
 
   </head>
 
-
   <body>
-
-<!--
-  <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-        
-      </a>
-    </div>
-  </div>
-</nav>
--->
 
   <div class="row" id="sky">
     <div class="col-sm-12 col-xs-12 col-sm-offset-0 col-xs-offset-0" > <img src="stars.png" class="img-responsive" alt="Stars" style="position: absolute;" > </div>
     </div>
   </div>
 
-<div class="row">
-  <div id="treeline">
+  <div class="row">
+    <div id="treeline">
 
-    <div class="col-sm-8 col-xs-12 col-sm-offset-2 col-xs-offset-0" > <img src="yard2.png" class="img-responsive" alt="Yard" > </div>
-  </div>
-</div>
-
- <div class="row">
-   <div id="neighborhood">
-      <div class="col-sm-2 col-xs-2 col-sm-offset-1 col-xs-offset-1"> <img src="tallhouseCC.png" class="img-responsive" alt="Tall House" style="position: absolute;"> </div>
-      <div class="col-sm-2 col-xs-2" > <img src="greenhouseCC.png" class="img-responsive" alt="Green House" style="position: absolute;"> </div>
-      <div class="col-sm-2 col-xs-2" > <img src="centerhouseCC.png" class="img-responsive" alt="Center House" style="position: absolute;"></div>
-      <div class="col-sm-2 col-xs-2" > <img src="italianhouseCC.png" class="img-responsive" alt="Italian House" style="position: absolute;"> </div>
-      <div class="col-sm-2 col-xs-2" > <img src="tealhouseCC.png" class="img-responsive" alt="Teal House" style="position: absolute;"> </div>
-
+      <div id="yard" class="col-sm-8 col-xs-12 col-sm-offset-2 col-xs-offset-0" > <img src="yard2.png" class="img-responsive" alt="Yard" > </div>
     </div>
   </div>
 
-
-    
+  <div class="row">
+    <div id="neighborhood">
+      <div id="tallhouse" class="col-sm-2 col-xs-2 col-sm-offset-1 col-xs-offset-1"> <img src="tallhouseCC.png" class="img-responsive" alt="Tall House" style="position: absolute;"> </div>
+      <div id="greenhouse" class="col-sm-2 col-xs-2" > <img src="greenhouseCC.png" class="img-responsive" alt="Green House" style="position: absolute;"> </div>
+      <div id="centerhouse" class="col-sm-2 col-xs-2" > <img src="centerhouseCC.png" class="img-responsive" alt="Center House" style="position: absolute;"></div>
+      <div id="italianhouse" class="col-sm-2 col-xs-2" > <img src="italianhouseCC.png" class="img-responsive" alt="Italian House" style="position: absolute;"> </div>
+      <div id="tealhouse" class="col-sm-2 col-xs-2" > <img src="tealhouseCC.png" class="img-responsive" alt="Teal House" style="position: absolute;"> </div>
+    </div>
+  </div>
 
     <!-- jQuery first, then Bootstrap JS. -->
     <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -65,10 +47,27 @@
 
     <script type="text/javascript">
       $(document).ready(function() {
-        $("#sky").fadeIn(2000);
+        $('#yard').stop().animate({
+        'marginLeft' : "+=825px" //moves down
+        });
+        $('#tallhouse').stop().animate({
+        'marginTop' : "+=775px" //moves down
+        });
+        $('#greenhouse').stop().delay(200).animate({
+        'marginTop' : "+=775px" //moves down
+        });
+        $('#centerhouse').stop().delay(400).animate({
+        'marginTop' : "+=775px" //moves down
+        });
+        $('#italianhouse').stop().delay(600).animate({
+        'marginTop' : "+=775px" //moves down
+        });
+        $('#tealhouse').stop().delay(800).animate({
+        'marginTop' : "+=775px" //moves down
+        });
+        $("#sky").stop().delay(1200).fadeIn(2000);
       });
     </script>
 
-    
   </body>
 </html>

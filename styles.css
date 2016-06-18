@@ -1,24 +1,16 @@
 
 body {
   min-height: 400px;
-  padding-top: 5px;
+  padding-top: 0px;
   background-color: #0B0B3B; 
 }
-
-.navbar {
-   background-color: transparent;
-   background: transparent;
-   border-color: transparent;
-}
-
-.navbar li { color: #000 } 
 
 #neighborhoodsky{
 	min-height: 150px;
 }
 
 #neighborhood{
-  padding-top: 260px;
+  margin-top: -500px;
 }
 
 #sky{
@@ -31,4 +23,9 @@ body {
   padding-top: 270px;
   min-height: 30px;
   top:-3%;
+}
+
+
+#yard{
+	margin-left: -600px;
 }
