@@ -35,7 +35,14 @@
     <div id="neighborhood">
       <div id="tallhouse" class="col-sm-2 col-xs-2 col-sm-offset-1 col-xs-offset-1"> <img src="tallhouseCC.png" class="img-responsive" alt="Tall House" style="position: absolute;"> </div>
       <div id="greenhouse" class="col-sm-2 col-xs-2" > <img src="greenhouseCC.png" class="img-responsive" alt="Green House" style="position: absolute;"> </div>
-      <div id="centerhouse" class="col-sm-2 col-xs-2" > <img src="centerhouseCC.png" class="img-responsive" alt="Center House" style="position: absolute;"></div>
+      <div id="centerhouse" class="col-sm-2 col-xs-2" > 
+        <div class="front"> <img src="centerhouseCC.png" class="img-responsive" alt="Center House" style="position: absolute;"></div>
+        <div class="back">
+          <a href="cc-home.html">
+            <img src="welcome.png" class="img-responsive" alt="Italian House" style="position: absolute;">
+          </a>
+        </div>
+      </div>
       <div id="italianhouse" class="col-sm-2 col-xs-2" > <img src="italianhouseCC.png" class="img-responsive" alt="Italian House" style="position: absolute;"> </div>
       <div id="tealhouse" class="col-sm-2 col-xs-2" > <img src="tealhouseCC.png" class="img-responsive" alt="Teal House" style="position: absolute;"> </div>
     </div>
@@ -44,6 +51,7 @@
     <!-- jQuery first, then Bootstrap JS. -->
     <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 
     <script type="text/javascript">
       $(document).ready(function() {
@@ -65,7 +73,12 @@
         $('#tealhouse').stop().delay(800).animate({
         'marginTop' : "+=775px" //moves down
         });
-        $("#sky").stop().delay(1200).fadeIn(2000);
+        $("#sky").stop().delay(1200).animate({'opacity': 1}, 2000);;
+        $("#centerhouse").flip({
+          axis: 'y',
+          trigger: 'hover',
+          reverse: true
+        });
       });
     </script>
 

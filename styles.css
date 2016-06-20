@@ -5,6 +5,11 @@ body {
   background-color: #0B0B3B; 
 }
 
+#cctext{
+  color: white;
+  font-size: 100px;
+}
+
 #neighborhoodsky{
 	min-height: 150px;
 }
@@ -15,7 +20,7 @@ body {
 
 #sky{
 	padding-bottom: 80px;
-	display: none;
+	opacity: 0;
 }
 
 #treeline{
@@ -24,7 +29,6 @@ body {
   min-height: 30px;
   top:-3%;
 }
-
 
 #yard{
 	margin-left: -600px;
