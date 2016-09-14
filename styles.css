@@ -1,6 +1,6 @@
 
 body {
-  min-height: 400px;
+  min-height: 100vh;
   padding-top: 0px;
   background-color: #0B0B3B; 
 }
@@ -11,7 +11,7 @@ body {
 }
 
 #neighborhoodsky{
-	min-height: 150px;
+	height: 300vh;
 }
 
 #neighborhood{

@@ -1,0 +1,23 @@
+body {
+  min-height: 400px;
+  padding-top: 0px;
+  background-color: #0B0B3B; 
+}
+
+h1{
+	font-family: 'Bangers', cursive;
+	font-size: 2000%;
+	color: transparent;
+	text-align: center;
+	background-color:#0B0B3B; overflow:hidden;
+    display:inline-block;
+
+	
+}
+
+span { 
+    background: url("ccgroup.png");
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display:block;
+}
